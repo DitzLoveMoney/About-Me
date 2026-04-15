@@ -345,34 +345,21 @@
     .corner-br { bottom: 16px; right: 16px; border-bottom: 1px solid var(--gold); border-right: 1px solid var(--gold); }
   </style>
 </head>
-<body>
+<body class="blur-on">
 
   <!-- ========== BACKGROUND LAYERS ========== -->
   <div class="bg-base"></div>
   <div class="bg-grid"></div>
+  
   <div class="bg-orbs">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
   </div>
+  
   <div class="bg-noise"></div>
   <div class="bg-blur-overlay"></div>
-
-  <!-- Blur toggle button (top-right) -->
-  <button class="blur-toggle" onclick="toggleBlur()" title="Toggle blur effect">
-    <!-- Icon: blur OFF (eye with line) -->
-    <svg class="icon-blur-off" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
-      <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
-      <line x1="1" y1="1" x2="23" y2="23"/>
-    </svg>
-    <!-- Icon: blur ON (open eye) -->
-    <svg class="icon-blur-on" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M1 12S5 4 12 4s11 8 11 8-4 8-11 8S1 12 1 12z"/>
-      <circle cx="12" cy="12" r="3"/>
-    </svg>
-  </button>
-
+  
   <div class="corner corner-tl"></div>
   <div class="corner corner-tr"></div>
   <div class="corner corner-bl"></div>
