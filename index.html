@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DitzLoveMoney</title>
+  <title>About Me</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -31,9 +31,6 @@
       overflow-x: hidden;
     }
 
-    /* ========== BACKGROUND LAYERS ========== */
-
-    /* Layer 1: Rich geometric background (always present, modern) */
     .bg-base {
       position: fixed;
       inset: 0;
@@ -46,7 +43,6 @@
       pointer-events: none;
     }
 
-    /* Layer 2: Grid lines */
     .bg-grid {
       position: fixed;
       inset: 0;
@@ -58,7 +54,6 @@
       pointer-events: none;
     }
 
-    /* Layer 3: Floating orbs (decorative, modern) */
     .bg-orbs {
       position: fixed;
       inset: 0;
@@ -85,7 +80,6 @@
       100% { transform: translate(10px, -10px) scale(1.02); }
     }
 
-    /* Layer 4: Noise grain */
     .bg-noise {
       position: fixed;
       inset: 0;
@@ -96,8 +90,6 @@
       opacity: 0.6;
     }
 
-    /* ========== BLUR TOGGLE ========== */
-    /* Blur is OFF by default (as requested), ON when body has .blur-on */
     .bg-blur-overlay {
       position: fixed;
       inset: 0;
@@ -113,7 +105,6 @@
       -webkit-backdrop-filter: blur(8px);
     }
 
-    /* Blur toggle button */
     .blur-toggle {
       position: fixed;
       top: 18px;
@@ -138,7 +129,6 @@
     body.blur-on .blur-toggle .icon-blur-off { display: none; }
     body.blur-on .blur-toggle .icon-blur-on  { display: block; }
 
-    /* ========== CONTAINER ========== */
     .container {
       width: 100%;
       max-width: 480px;
@@ -146,7 +136,6 @@
       z-index: 1;
     }
 
-    /* ========== PROFILE ========== */
     .profile {
       display: flex;
       flex-direction: column;
@@ -183,10 +172,6 @@
       overflow: hidden;
     }
 
-    /* ── FOTO PROFIL ──
-       Untuk pakai foto: ganti src "foto.jpg" di bawah
-       Untuk pakai inisial: hapus tag <img>, inisial sudah ada sebagai fallback
-    */
     .avatar-inner img {
       width: 100%;
       height: 100%;
@@ -208,7 +193,6 @@
     .divider-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); opacity: 0.4; }
     .divider-icon { color: var(--gold); font-size: 14px; opacity: 0.7; }
 
-    /* ========== LINKS ========== */
     .links { display: flex; flex-direction: column; gap: 12px; }
 
     .link-item { border-radius: 12px; animation: fadeUp 0.6s ease both; }
@@ -227,6 +211,7 @@
     .link-item:nth-child(6) { animation-delay: 0.6s; }
     .link-item:nth-child(7) { animation-delay: 0.7s; }
     .link-item:nth-child(8) { animation-delay: 0.8s; }
+    .link-item:nth-child(9) { animation-delay: 0.9s; }
 
     .link-btn {
       display: flex;
@@ -260,7 +245,6 @@
     .link-btn:hover::before { opacity: 1; }
     .link-btn:active { transform: scale(0.98); }
 
-    /* SVG icon wrapper */
     .link-icon {
       width: 28px;
       height: 28px;
@@ -278,7 +262,6 @@
     .link-btn:hover .link-name { color: var(--gold-pale); }
     .link-btn:hover .link-arrow { opacity: 1; transform: translateX(2px); }
 
-    /* ========== QRIS ========== */
     .qris-btn.is-open { border-radius: 12px 12px 0 0 !important; border-bottom-color: transparent !important; transform: none !important; }
     .qris-btn.is-open .link-arrow { transform: rotate(90deg); opacity: 1; }
 
@@ -330,14 +313,12 @@
 
     .qris-note { font-size: 11px; color: var(--text-muted); letter-spacing: 0.05em; text-align: center; }
 
-    /* ========== FOOTER ========== */
     .footer { margin-top: 40px; text-align: center; animation: fadeIn 1s ease 1s both; }
     .footer p { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.25); }
     .footer span { color: rgba(201,168,76,0.5); }
 
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-    /* Corner decorations */
     .corner { position: fixed; width: 80px; height: 80px; pointer-events: none; z-index: 0; opacity: 0.15; }
     .corner-tl { top: 16px; left: 16px; border-top: 1px solid var(--gold); border-left: 1px solid var(--gold); }
     .corner-tr { top: 16px; right: 16px; border-top: 1px solid var(--gold); border-right: 1px solid var(--gold); }
@@ -347,7 +328,6 @@
 </head>
 <body class="blur-on">
 
-  <!-- ========== BACKGROUND LAYERS ========== -->
   <div class="bg-base"></div>
   <div class="bg-grid"></div>
   
@@ -367,17 +347,11 @@
 
   <div class="container">
 
-    <!-- ========== PROFILE ========== -->
     <div class="profile">
       <div class="avatar-wrap">
         <div class="avatar-ring"></div>
         <div class="avatar-inner">
-          <!--
-            ── FOTO PROFIL ──
-            Aktifkan foto: hapus komentar di bawah, ganti src dengan URL/path foto kamu
-            Default pakai inisial "D"
-          -->
-          <!-- <img src="foto.jpg" alt="DitzLoveMoney" /> -->
+          <img src="foto.gif" alt="DitzLoveMoney" />
           <span class="avatar-placeholder">D</span>
         </div>
       </div>
@@ -391,19 +365,12 @@
       <div class="divider-line"></div>
     </div>
 
-    <!-- ========== LINKS ========== -->
-    <!--
-      SHOW / HIDDEN:
-      • Hapus class "hidden" → link tampil ✅
-      • Tambah class "hidden" → link sembunyi ❌
-    -->
     <div class="links">
 
       <!-- Instagram -->
       <div class="link-item">
         <a class="link-btn" href="https://instagram.com/ditz.suka.uang" target="_blank" rel="noopener">
           <span class="link-icon">
-            <!-- Instagram icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
               <circle cx="12" cy="12" r="4.5"/>
@@ -419,7 +386,6 @@
       <div class="link-item">
         <a class="link-btn" href="https://tiktok.com/@ditz.suka.uang" target="_blank" rel="noopener">
           <span class="link-icon">
-            <!-- TikTok icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
             </svg>
@@ -433,7 +399,6 @@
       <div class="link-item">
         <a class="link-btn" href="https://wa.me/6282220882235" target="_blank" rel="noopener">
           <span class="link-icon">
-            <!-- WhatsApp icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
             </svg>
@@ -447,7 +412,6 @@
       <div class="link-item">
         <a class="link-btn" href="https://saweria.co/DitzLoveMoney" target="_blank" rel="noopener">
           <span class="link-icon">
-            <!-- Donate / coin icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="9"/>
               <path d="M12 7v5l3 3"/>
@@ -459,11 +423,27 @@
         </a>
       </div>
 
+      <!-- Convert Tool -->
+      <div class="link-item">
+        <a class="link-btn" href="https://convert.horizone.my.id" target="_blank" rel="noopener">
+          <span class="link-icon">
+            <!-- Refresh/convert arrows icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="17 1 21 5 17 9"/>
+              <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+              <polyline points="7 23 3 19 7 15"/>
+              <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+            </svg>
+          </span>
+          <span class="link-name">File Converter</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+
       <!-- Cloud Storage -->
       <div class="link-item">
         <a class="link-btn" href="https://cloud.horizone.my.id" target="_blank" rel="noopener">
           <span class="link-icon">
-            <!-- Cloud icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
             </svg>
@@ -477,13 +457,12 @@
       <div class="link-item">
         <a class="link-btn" href="mailto:support@horizone.my.id" target="_blank" rel="noopener">
           <span class="link-icon">
-            <!-- Email icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
             </svg>
           </span>
-          <span class="link-name">Email Me</span>
+          <span class="link-name">Email Support</span>
           <span class="link-arrow">→</span>
         </a>
       </div>
@@ -492,7 +471,6 @@
       <div class="link-item">
         <div class="link-btn qris-btn" onclick="toggleQris()">
           <span class="link-icon">
-            <!-- QR code icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="3" width="7" height="7" rx="1"/>
               <rect x="14" y="3" width="7" height="7" rx="1"/>
@@ -512,11 +490,6 @@
           <div class="qris-inner">
             <p class="qris-label">✦ Scan untuk transfer ✦</p>
             <div class="qris-img-wrap">
-              <!--
-                CARA PASANG FOTO QRIS:
-                1. Hapus placeholder di bawah
-                2. Ganti src dengan path/URL file QRIS kamu
-              -->
               <img src="qriss.png" alt="QRIS Payment" class="qris-img"
                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
               <div style="display:none; width:200px; height:200px; flex-direction:column; align-items:center; justify-content:center; gap:10px; background:#0a0a0a; border:1px dashed rgba(201,168,76,0.2); border-radius:4px;">
@@ -545,7 +518,6 @@
   </div>
 
   <script>
-    // QRIS toggle
     function toggleQris() {
       const panel = document.getElementById('qris-panel');
       const btn   = document.querySelector('.qris-btn');
@@ -554,7 +526,6 @@
       btn.classList.toggle('is-open', !isOpen);
     }
 
-    // Blur toggle — OFF by default
     function toggleBlur() {
       document.body.classList.toggle('blur-on');
     }
