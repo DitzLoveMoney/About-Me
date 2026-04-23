@@ -13,8 +13,8 @@
 
   <meta property="og:title"       content="About Me | DitzLoveMoney" />
   <meta property="og:description" content="All-in-One Links &amp; Tools." />
-  <meta property="og:image"       content="https://horizone..id/banner.jpg" />
-  <meta property="og:url"         content="https://horizone..id" />
+  <meta property="og:image"       content="https://horizone.my.id/banner.jpg" />
+  <meta property="og:url"         content="https://horizone.my.id" />
   <meta property="og:type"        content="website" />
   <meta property="og:site_name"   content="DitzLoveMoney" />
 
@@ -22,11 +22,29 @@
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="About Me | DitzLoveMoney" />
   <meta name="twitter:description" content="All-in-One Links &amp; Tools." />
-  <meta name="twitter:image"       content="https://horizone..id/banner.jpg" />
-  
-  <link rel="icon" href="foto.gif" />
+  <meta name="twitter:image"       content="https://horizone.my.id/banner.jpg" />
 
-  <title>All-Link | DitzLoveMoney</title>
+  <!-- =============================================
+       FAVICON — Icon di tab browser
+       Cara pakai:
+         1. Siapkan file favicon kamu (bisa .png, .ico, .svg)
+         2. Upload ke folder yang sama dengan index.html
+         3. Ganti href di bawah sesuai nama file
+
+       Contoh kalau pakai foto profil:
+         <link rel="icon" type="image/png" href="foto.gif" />
+
+       Kalau mau favicon dari URL:
+         <link rel="icon" type="image/png" href="https://..." />
+
+       Untuk iPhone (home screen icon):
+         <link rel="apple-touch-icon" href="icon-180.png" />
+       ============================================= -->
+  <link rel="icon" type="image/png"  href="favicon.png" />
+  <!-- Uncomment baris ini kalau pakai foto profil langsung sebagai icon: -->
+  <!-- <link rel="icon" href="foto.gif" /> -->
+
+  <title>About Me | DitzLoveMoney</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -89,24 +107,18 @@
     -->
     <div class="links">
 
-      <!-- 4. Saweria — icon: koin dengan tanda $ -->
+      <!-- 1. Instagram -->
       <div class="link-item">
-        <a class="link-btn" href="https://saweria.co/DitzLoveMoney" target="_blank" rel="noopener">
+        <a class="link-btn" href="https://instagram.com/ditz.suka.uang" target="_blank" rel="noopener">
           <span class="link-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6"
                  stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="9"/>
-              <path d="M14.5 9.5C14.5 8.4 13.4 8 12.5 8
-                       C11.3 8 10.5 8.7 10.5 9.7
-                       C10.5 10.8 11.5 11.2 12.5 11.5
-                       C13.6 11.9 14.8 12.4 14.8 13.7
-                       C14.8 15 13.7 15.8 12.4 15.8
-                       C11.1 15.8 10 15.1 10 14"/>
-              <line x1="12" y1="6.5" x2="12" y2="8"/>
-              <line x1="12" y1="16" x2="12" y2="17.5"/>
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4.5"/>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="#c9a84c" stroke="none"/>
             </svg>
           </span>
-          <span class="link-name">Saweria</span>
+          <span class="link-name">Instagram</span>
           <span class="link-arrow">&#8594;</span>
         </a>
       </div>
@@ -121,22 +133,6 @@
             </svg>
           </span>
           <span class="link-name">TikTok</span>
-          <span class="link-arrow">&#8594;</span>
-        </a>
-      </div>
-
-      <!-- 1. Instagram -->
-      <div class="link-item">
-        <a class="link-btn" href="https://instagram.com/ditz.suka.uang" target="_blank" rel="noopener">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6"
-                 stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5"/>
-              <circle cx="12" cy="12" r="4.5"/>
-              <circle cx="17.5" cy="6.5" r="1.2" fill="#c9a84c" stroke="none"/>
-            </svg>
-          </span>
-          <span class="link-name">Instagram</span>
           <span class="link-arrow">&#8594;</span>
         </a>
       </div>
@@ -162,6 +158,79 @@
         </a>
       </div>
 
+      <!-- 4. Saweria — icon: koin dengan tanda $ -->
+      <div class="link-item">
+        <a class="link-btn" href="https://saweria.co/DitzLoveMoney" target="_blank" rel="noopener">
+          <span class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M14.5 9.5C14.5 8.4 13.4 8 12.5 8
+                       C11.3 8 10.5 8.7 10.5 9.7
+                       C10.5 10.8 11.5 11.2 12.5 11.5
+                       C13.6 11.9 14.8 12.4 14.8 13.7
+                       C14.8 15 13.7 15.8 12.4 15.8
+                       C11.1 15.8 10 15.1 10 14"/>
+              <line x1="12" y1="6.5" x2="12" y2="8"/>
+              <line x1="12" y1="16" x2="12" y2="17.5"/>
+            </svg>
+          </span>
+          <span class="link-name">Saweria</span>
+          <span class="link-arrow">&#8594;</span>
+        </a>
+      </div>
+
+      <!-- 5. TikTok & IG Downloader -->
+      <div class="link-item">
+        <a class="link-btn" href="https://convert.horizone.my.id" target="_blank" rel="noopener">
+          <span class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="15" height="11" rx="2"/>
+              <polygon points="6,6 6,11 10.5,8.5" fill="#c9a84c" stroke="none" opacity="0.8"/>
+              <line x1="19" y1="8" x2="19" y2="20"/>
+              <polyline points="15,16 19,21 23,16"/>
+            </svg>
+          </span>
+          <span class="link-name">TikTok &amp; IG Downloader</span>
+          <span class="link-arrow">&#8594;</span>
+        </a>
+      </div>
+
+      <!-- 6. Minecraft Server -->
+      <div class="link-item">
+        <a class="link-btn" href="https://nexura.my.id" target="_blank" rel="noopener">
+          <span class="link-icon">
+            <!--
+              Minecraft icon: creeper face
+              Dibuat dari kotak-kotak pixel art style
+            -->
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Kepala Creeper (outline kotak) -->
+              <rect x="2" y="2" width="20" height="20" rx="2"
+                    fill="rgba(201,168,76,0.12)" stroke="#c9a84c" stroke-width="1.4"/>
+              <!-- Mata kiri -->
+              <rect x="5" y="7" width="4" height="4" rx="0.5" fill="#c9a84c"/>
+              <!-- Mata kanan -->
+              <rect x="15" y="7" width="4" height="4" rx="0.5" fill="#c9a84c"/>
+              <!-- Mulut — bentuk T terbalik khas creeper -->
+              <!-- Batang tengah atas -->
+              <rect x="10" y="12" width="4" height="2" rx="0.3" fill="#c9a84c"/>
+              <!-- Kiri mulut -->
+              <rect x="7"  y="14" width="3" height="2" rx="0.3" fill="#c9a84c"/>
+              <!-- Kanan mulut -->
+              <rect x="14" y="14" width="3" height="2" rx="0.3" fill="#c9a84c"/>
+              <!-- Bawah kiri -->
+              <rect x="7"  y="16" width="3" height="3" rx="0.3" fill="#c9a84c"/>
+              <!-- Bawah kanan -->
+              <rect x="14" y="16" width="3" height="3" rx="0.3" fill="#c9a84c"/>
+            </svg>
+          </span>
+          <span class="link-name">Minecraft Server</span>
+          <span class="link-arrow">&#8594;</span>
+        </a>
+      </div>
+
       <!-- 7. Cloud Storage -->
       <div class="link-item">
         <a class="link-btn" href="https://cloud.horizone.my.id" target="_blank" rel="noopener">
@@ -176,41 +245,6 @@
         </a>
       </div>
 
-      <!-- 6. Server Stats — Minecraft dashboard -->
-      <div class="link-item">
-        <a class="link-btn" href="https://stats.nexura.my.id" target="_blank" rel="noopener">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6"
-                 stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2"  y="14" width="4"  height="7" rx="1" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.2"/>
-              <rect x="8"  y="9"  width="4"  height="12" rx="1" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.2"/>
-              <rect x="14" y="11" width="4"  height="10" rx="1" fill="rgba(201,168,76,0.2)" stroke="#c9a84c" stroke-width="1.2"/>
-              <polyline points="1,7 4,5 7,8 10,3 13,6 16,4 19,7 22,5" stroke-width="1.4"/>
-              <circle cx="22" cy="5" r="1.8" fill="#c9a84c" stroke="none"/>
-            </svg>
-          </span>
-          <span class="link-name">Server Stats &middot; MC</span>
-          <span class="link-arrow">&#8594;</span>
-        </a>
-      </div>
-
-      <!-- 5. TikTok & IG Downloader -->
-      <div class="link-item">
-        <a class="link-btn" href="https://downloader.nexura.my.id/" target="_blank" rel="noopener">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.6"
-                 stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="15" height="11" rx="2"/>
-              <polygon points="6,6 6,11 10.5,8.5" fill="#c9a84c" stroke="none" opacity="0.8"/>
-              <line x1="19" y1="8" x2="19" y2="20"/>
-              <polyline points="15,16 19,21 23,16"/>
-            </svg>
-          </span>
-          <span class="link-name">TikTok Downloader</span>
-          <span class="link-arrow">&#8594;</span>
-        </a>
-      </div>
-
       <!-- 8. Email -->
       <div class="link-item">
         <a class="link-btn" href="mailto:support@horizone.my.id" target="_blank" rel="noopener">
@@ -221,7 +255,7 @@
               <polyline points="22,6 12,13 2,6"/>
             </svg>
           </span>
-          <span class="link-name">Contact Email Support</span>
+          <span class="link-name">Email Support</span>
           <span class="link-arrow">&#8594;</span>
         </a>
       </div>
